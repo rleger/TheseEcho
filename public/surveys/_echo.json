@@ -1,0 +1,742 @@
+{
+  "questions": [
+    {
+      "title": "Organisation de la pratique de l'anesthésie locorégionale dans votre service",
+      "type": "heading"
+    },
+    {
+      "title": "Un anesthésiste est-il disponible pour pratiquer une anesthésie locorégionale dans votre service ?",
+      "type": "single_choice",
+      "values": {
+        "toujours": "Toujours",
+        "jamais": "Jamais",
+        "parfois": "Parfois"
+      },
+      "field_name": "anest_dispo"
+    },
+    {
+      "title": "Disposez-vous dans votre service d'un protocole d'anesthésie locorégionale ?",
+      "type": "single_choice",
+      "values": {
+        "oui": "Oui",
+        "non": "Non",
+        "ne_sais_pas": "Je ne sais pas"
+      },
+      "field_name": "protocole_dispo"
+    },
+    {
+      "title": "Dans votre service, avez-vous facilement accès à un échographe ?",
+      "type": "single_choice",
+      "values": {
+        "oui": "Oui",
+        "non": "Non",
+        "ne_sais_pas": "Je ne sais pas"
+      },
+      "field_name": "echo_dispo"
+    },
+    {
+      "title": "Avez-vous déjà reçu une formation d'anesthésie locorégionale ?",
+      "type": "single_choice",
+      "values": {
+        "oui": "Oui",
+        "non": "Non"
+      },
+      "field_name": "formation_alr",
+      "subquestion": {
+        "oui": {
+          "true": [
+            {
+              "title": "La formation portait-elle sur l'anesthésie locorégionale <strong>échoguidée</strong>",
+              "type": "single_choice",
+              "values": {
+                "oui": "Oui",
+                "non": "Non"
+              },
+              "field_name": "formation_alr_echo"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Pratiquez-vous l'anesthésie locorégionale en traumatologie (excluant les plaies) ?",
+      "type": "single_choice",
+      "values": {
+        "oui": "Oui",
+        "non": "Non"
+      },
+      "field_name": "pratique_ALR",
+      "subquestion": {
+        "oui": {
+          "true": [
+            {
+              "title": "Dans quelle région anatomique ?",
+              "type": "multiple_choice",
+              "values": {
+                "msup": "Membre supérieur",
+                "minf": "Membre inférieur",
+                "minf_diaph": "Membre inférieur, mais seulement pour les fractures de la diaphyse fémorale",
+                "face": "Face",
+                "autre": "Autre"
+              },
+              "field_name": "pratique_ALR_region"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Pratiquez-vous l'anesthésie locorégionale dans les fractures de l'extrémité supérieure du fémur ?",
+      "type": "single_choice",
+      "values": {
+        "toujours": "Toujours",
+        "occasionnellement": "Occasionnellement",
+        "jamais": "Jamais"
+      },
+      "field_name": "pratique_ALR_FESF"
+    },
+    {
+      "title": "L'anesthésie locorégionale en pratique",
+      "type": "heading"
+    },
+    {
+      "title": "Pratiquez-vous une anesthésie locorégionale si :",
+      "type": "multiple_choice",
+      "values": {
+        "refus": "Le patient refuse",
+        "pas_de_consentement": "Le patient n'est pas en mesure de donner son consentement",
+        "infection": "Il existe des signes infectieux au point de ponction",
+        "anticoag": "Le patient est sous anticoagulants",
+        "antiaggreg": "Le patient est sous antiaggrégants",
+        "troubles_coag": "Le patient est porteur d'un trouble de la coagulation",
+        "troubles_neuro": "Il existe des troubles neurologiques dans le territoire du bloc",
+        "aucun": "Dans aucune des situations ci-dessus"
+      },
+      "field_name": "contre_indication_alr"
+    },
+    {
+      "title": "A quelle phase de votre prise en charge réalisez-vous l’anesthésie locorégionale dans les fractures de l'extrémité supérieure du fémur ?",
+      "type": "multiple_choice",
+      "values": {
+        "pre_hosp": "En pré-hospitalier",
+        "arrivee": "Dès l'arrivée du patient en IAO",
+        "avant_rx": "Avant la radiographie",
+        "apres_rx": "Après la radiographie",
+        "box": "Dans le box, dès que je suis disponible",
+        "avt_traction": "Avant la mise en place de la traction",
+        "avt_service": "Juste avant le transfert dans le service",
+        "avt_bloc": "Juste avant le transfert vers le bloc opératoire",
+        "autre": "Autre"
+      },
+      "field_name": "phase_realisation_alr"
+    },
+    {
+      "title": "Réalisez-vous une anesthésie locorégionale dans les fractures de l'extrémité supérieure du fémur quelle que soit l’intensité de la douleur?",
+      "type": "single_choice",
+      "values": {
+        "oui": "Oui",
+        "non": "Non"
+      },
+      "field_name": "ALR_douleur"
+    },
+    {
+      "title": "Quel moyen de repérage utilisez-vous dans l'anesthésie locorégionale des fractures de l'extrémité supérieure du fémur ?",
+      "type": "multiple_choice",
+      "values": {
+        "echo": "L’échographie",
+        "neurostim": "La neurostimulation",
+        "cutane": "Le repérage cutané"
+      },
+      "field_name": "reperage"
+    },
+    {
+      "title": "Quelles sont la ou les techniques d'anesthésie locorégionale que vous utilisez dans l’analgésie des fractures de l'extrémité supérieure du fémur ?",
+      "type": "multiple_choice",
+      "values": {
+        "bif": "Le bloc ilio-fascial",
+        "femoral": "Le bloc fémoral",
+        "fem_obtu": "Le bloc fémoral associé au bloc obturateur"
+      },
+      "subquestion": {
+        "bif": {
+          "true": [
+            {
+              "title": "parceque :",
+              "type": "multiple_choice",
+              "field_name": "bif_indication",
+              "values": {
+                "bif_facilite": "La technique est plus simple",
+                "bif_rapidite": "La technique est plus rapide",
+                "bif_pas_neurostim": "La technique ne nécessite pas de repérage en neurostimulation",
+                "bif_efficacite_col": "Il est plus efficace dans les fractures du col",
+                "bif_efficacite_FMT": "Il est plus efficace dans les fractures du massif trochantérien",
+                "bif_efficacite_diaph": "Il est plus efficace dans les fractures trochantéro-diaphysaire",
+                "bif_autre": "Autres"
+              }
+            }
+          ]
+        },
+        "femoral": {
+          "true": [
+            {
+              "title": "parceque :",
+              "type": "multiple_choice",
+              "field_name": "femoral_indication",
+              "values": {
+                "femoral_facilite": "La technique est plus simple",
+                "femoral_rapidite": "La technique est plus rapide",
+                "femoral_efficacite_col": "Il est plus efficace dans les fractures du col",
+                "femoral_efficacite_FMT": "Il est plus efficace dans les fractures du massif trochantérien",
+                "femoral_efficacite_diaph": "Il est plus efficace dans les fractures trochantéro-diaphysaire",
+                "femoral_echoguide": "Le nerf fémoral est facilement repérable sous échographie",
+                "femoral_autre": "Autres"
+              }
+            }
+          ]
+        },
+        "fem_obtu": {
+          "true": [
+            {
+              "title": "parceque :",
+              "type": "multiple_choice",
+              "field_name": "fem_obtu_indication",
+              "values": {
+                "fem_obtu_efficacite_col": "Il est plus efficace dans les fractures du col",
+                "fem_obtu_efficacite_FMT": "Il est plus efficace dans les fractures du massif trochantérien",
+                "fem_obtu_efficacite_diaph": "Il est plus efficace dans les fractures trochantéro-diaphysaire",
+                "fem_obtu_echoguide": "Le nerf fémoral est facilement repérable sous échographie",
+                "fem_obtu_autre": "Autres"
+              }
+            }
+          ]
+        }
+      },
+      "field_name": "quel_bloc"
+    },
+    {
+      "title": "Quel(s) Anesthésique(s) local(aux) utilisez-vous pour réaliser un bloc ilio-fascial?",
+      "type": "multiple_choice",
+      "values": {
+        "bif_lido": "Lidocaïne (xylocaïne)",
+        "bif_ropi": "Ropivacaïne (naropeïne)",
+        "bif_mepi": "Mépivacaïne (carbocaïne)",
+        "bif_cata": "Clonidine (catapressan)",
+        "bif_adre": "Solution adrénalinée",
+        "bif_asso": "Association d’AL"
+      },
+      "subquestion": {
+        "bif_lido": {
+          "true": [
+            {
+              "title": "Concentration (mg/mL) ?",
+              "type": "multiple_choice",
+              "field_name": "bif_concentration_lido",
+              "values": {
+                "5": "5 mg/mL",
+                "10": "10 mg/mL",
+                "20": "20 mg/mL",
+                "sais_pas": "Je ne sais pas"
+              }
+            },
+            {
+              "title": "Volume en mL ?",
+              "type": "text",
+              "field_name": "bif_volume_lido"
+            }
+          ]
+        },
+        "bif_ropi": {
+          "true": [
+            {
+              "title": "Concentration (mg/mL) ?",
+              "type": "multiple_choice",
+              "field_name": "bif_concentration_ropi",
+              "values": {
+                "2": "2 mg/mL",
+                "5": "5 mg/mL",
+                "7,5": "7,5 mg/mL",
+                "10": "10 mg/mL",
+                "sais_pas": "Je ne sais pas"
+              }
+            },
+            {
+              "title": "Volume en mL ?",
+              "type": "text",
+              "field_name": "bif_volume_ropi"
+            }
+          ]
+        },
+        "bif_mepi": {
+          "true": [
+            {
+              "title": "Concentration (mg/mL) ?",
+              "type": "multiple_choice",
+              "field_name": "bif_concentration_mepi",
+              "values": {
+                "10": "10 mg/mL",
+                "20": "20 mg/mL",
+                "sais_pas": "Je ne sais pas"
+              }
+            },
+            {
+              "title": "Volume en mL ?",
+              "type": "text",
+              "field_name": "bif_volume_mepi"
+            }
+          ]
+        },
+        "bif_cata": {
+          "true": [
+            {
+              "title": "Dose (mg/Kg) ?",
+              "type": "text",
+              "field_name": "bif_volume_cata"
+            }
+          ]
+        },
+        "bif_asso": {
+          "true": [
+            {
+              "title": "Quelle association ?",
+              "type": "text",
+              "field_name": "bif_type_assoc"
+            }
+          ]
+        }
+      },
+      "field_name": "AL_bif"
+    },
+    {
+      "title": "Quel(s) Anesthésique(s) local(aux) utilisez-vous pour réaliser un bloc fémoral?",
+      "type": "multiple_choice",
+      "values": {
+        "fem_lido": "Lidocaïne (xylocaïne)",
+        "fem_ropi": "Ropivacaïne (naropeïne)",
+        "fem_mepi": "Mépivacaïne (carbocaïne)",
+        "fem_cata": "Clonidine (catapressan)",
+        "fem_adre": "Solution adrénalinée",
+        "fem_asso": "Association d’AL"
+      },
+      "subquestion": {
+        "fem_lido": {
+          "true": [
+            {
+              "title": "Concentration (mg/mL) ?",
+              "type": "multiple_choice",
+              "field_name": "fem_concentration_lido",
+              "values": {
+                "5": "5 mg/mL",
+                "10": "10 mg/mL",
+                "20": "20 mg/mL",
+                "sais_pas": "Je ne sais pas"
+              }
+            },
+            {
+              "title": "Volume en mL ?",
+              "type": "text",
+              "field_name": "fem_volume_lido"
+            }
+          ]
+        },
+        "fem_ropi": {
+          "true": [
+            {
+              "title": "Concentration (mg/mL) ?",
+              "type": "multiple_choice",
+              "field_name": "fem_concentration_ropi",
+              "values": {
+                "2": "2 mg/mL",
+                "5": "5 mg/mL",
+                "7,5": "7,5 mg/mL",
+                "10": "10 mg/mL",
+                "sais_pas": "Je ne sais pas"
+              }
+            },
+            {
+              "title": "Volume en mL ?",
+              "type": "text",
+              "field_name": "fem_volume_ropi"
+            }
+          ]
+        },
+        "fem_mepi": {
+          "true": [
+            {
+              "title": "Concentration (mg/mL) ?",
+              "type": "multiple_choice",
+              "field_name": "fem_concentration_mepi",
+              "values": {
+                "10": "10 mg/mL",
+                "20": "20 mg/mL",
+                "sais_pas": "Je ne sais pas"
+              }
+            },
+            {
+              "title": "Volume en mL ?",
+              "type": "text",
+              "field_name": "fem_volume_mepi"
+            }
+          ]
+        },
+        "fem_cata": {
+          "true": [
+            {
+              "title": "Dose (mg/Kg) ?",
+              "type": "text",
+              "field_name": "fem_volume_cata"
+            }
+          ]
+        },
+        "fem_asso": {
+          "true": [
+            {
+              "title": "Quelle association ?",
+              "type": "text",
+              "field_name": "fem_type_assoc"
+            }
+          ]
+        }
+      },
+      "field_name": "AL_bf"
+    },
+    {
+      "title": "Quel(s) Anesthésique(s) local(aux) utilisez-vous pour réaliser un bloc fémoral associé au bloc obturateur?",
+      "type": "multiple_choice",
+      "values": {
+        "fem_obtu_lido": "Lidocaïne (xylocaïne)",
+        "fem_obtu_ropi": "Ropivacaïne (naropeïne)",
+        "fem_obtu_mepi": "Mépivacaïne (carbocaïne)",
+        "fem_obtu_cata": "Clonidine (catapressan)",
+        "fem_obtu_adre": "Solution adrénalinée",
+        "fem_obtu_asso": "Association d’AL"
+      },
+      "subquestion": {
+        "fem_obtu_lido": {
+          "true": [
+            {
+              "title": "Concentration (mg/mL) ?",
+              "type": "multiple_choice",
+              "field_name": "fem_obtu_concentration_lido",
+              "values": {
+                "5": "5 mg/mL",
+                "10": "10 mg/mL",
+                "20": "20 mg/mL",
+                "sais_pas": "Je ne sais pas"
+              }
+            },
+            {
+              "title": "Volume en mL ?",
+              "type": "text",
+              "field_name": "fem_obtu_volume_lido"
+            }
+          ]
+        },
+        "fem_obtu_ropi": {
+          "true": [
+            {
+              "title": "Concentration (mg/mL) ?",
+              "type": "multiple_choice",
+              "field_name": "fem_obtu_concentration_ropi",
+              "values": {
+                "2": "2 mg/mL",
+                "5": "5 mg/mL",
+                "7,5": "7,5 mg/mL",
+                "10": "10 mg/mL",
+                "sais_pas": "Je ne sais pas"
+              }
+            },
+            {
+              "title": "Volume en mL ?",
+              "type": "text",
+              "field_name": "fem_obtu_volume_ropi"
+            }
+          ]
+        },
+        "fem_obtu_mepi": {
+          "true": [
+            {
+              "title": "Concentration (mg/mL) ?",
+              "type": "multiple_choice",
+              "field_name": "fem_obtu_concentration_mepi",
+              "values": {
+                "10": "10 mg/mL",
+                "20": "20 mg/mL",
+                "sais_pas": "Je ne sais pas"
+              }
+            },
+            {
+              "title": "Volume en mL ?",
+              "type": "text",
+              "field_name": "fem_obtu_volume_mepi"
+            }
+          ]
+        },
+        "fem_obtu_cata": {
+          "true": [
+            {
+              "title": "Dose (mg/Kg) ?",
+              "type": "text",
+              "field_name": "fem_obtu_volume_cata"
+            }
+          ]
+        },
+        "fem_obtu_asso": {
+          "true": [
+            {
+              "title": "Quelle association ?",
+              "type": "text",
+              "field_name": "fem_obtu_type_assoc"
+            }
+          ]
+        }
+      },
+      "field_name": "AL_bf_obtu"
+    },
+    {
+      "title": "Et concrètement, l'anesthésie locorégionale aux urgences, vous trouvez ça comment ?",
+      "type": "heading"
+    },
+    {
+      "title": "Pour vous, l’intérêt de l'anesthésie locorégionale dans les fractures de l'extrémité supérieure du fémur est de :",
+      "type": "multiple_choice",
+      "values": {
+        "traction": "Soulager le patient avant de mettre une traction",
+        "epargne": "Réaliser une épargne morphinique ou autres antalgiques iatrogènes",
+        "analg_LDA": "Utiliser des anesthésiques locaux de longue durée d’action pour soulager le patient jusqu’à l’intervention",
+        "geria": "Ameliorer le confort de la personne âgée traumatisée aux urgences",
+        "transport": "Réaliser dans les meilleures conditions les transferts du patient traumatisé",
+        "autre": "Autre",
+        "aucun": "Aucun"
+      },
+      "field_name": "interet_ALR"
+    },
+    {
+      "title": "Parmi les blocs que vous pratiquez dans les fractures de l'extrémité supérieure du fémur, quel est le pourcentage d’échec ?",
+      "info": "Echec = Patient non soulagé présentant une douleur modérée à sevère 45 minutes après l'anesthésie locorégionale",
+      "type": "single_choice",
+      "values": {
+        "100": "100%",
+        "75": "75%",
+        "50": "50%",
+        "25": "25%",
+        "<10": "moins de 10%"
+      },
+      "field_name": "echec"
+    },
+    {
+      "title": "Pensez-vous que l’élaboration d’un protocole standardisé universel et validé modifierait vos pratiques ?",
+      "info": "Protocole validé par la SFAR ou SFMU",
+      "type": "single_choice",
+      "values": {
+        "Oui": "Oui",
+        "Non": "Non",
+        "ne_sais_pas": "Vous ne savez-pas"
+      },
+      "field_name": "protocole_std"
+    },
+    {
+      "title": "Quelles sont vos réticences sur la pratique de l'anesthésie locorégionale sur les fractures de l'extrémité supérieure du fémur en urgence ?",
+      "type": "multiple_choice",
+      "values": {
+        "efficacite": "Doute sur l’efficacité",
+        "formation": "Absence de formation",
+        "experience": "Manque d’expérience",
+        "temps": "Contrainte de temps",
+        "reco": "Absence de recommandations précises",
+        "cout": "Coût financier",
+        "aucune": "Aucune",
+        "autre": "Autres"
+      },
+      "field_name": "reticences"
+    },
+    {
+      "title": "Généralités",
+      "type": "heading"
+    },
+    {
+      "title": "Quelle est votre spécialité principale ?",
+      "type": "select",
+      "values": {
+        "med_urg": "Urgentiste",
+        "med_anest": "Anesthésiste",
+        "med_spe": "Spécialiste médical",
+        "med_ge": "Médecin généraliste",
+        "med_chir": "Chirurgien",
+        "med_autre": "Autre"
+      },
+      "field_name": "metier"
+    },
+    {
+      "title": "Quel est votre âge ?",
+      "type": "select",
+      "values": {
+        "25": "25",
+        "26": "26",
+        "27": "27",
+        "28": "28",
+        "29": "29",
+        "30": "30",
+        "31": "31",
+        "32": "32",
+        "33": "33",
+        "34": "34",
+        "35": "35",
+        "36": "36",
+        "37": "37",
+        "38": "38",
+        "39": "39",
+        "40": "40",
+        "41": "41",
+        "42": "42",
+        "43": "43",
+        "44": "44",
+        "45": "45",
+        "46": "46",
+        "47": "47",
+        "48": "48",
+        "49": "49",
+        "50": "50",
+        "51": "51",
+        "52": "52",
+        "53": "53",
+        "54": "54",
+        "55": "55",
+        "56": "56",
+        "57": "57",
+        "58": "58",
+        "59": "59",
+        "60": "60",
+        "61": "61",
+        "62": "62",
+        "63": "63",
+        "64": "64",
+        "65": "65",
+        "66": "66",
+        "67": "67",
+        "68": "68",
+        "69": "69",
+        "70_or_more": "70 ou plus"
+      },
+      "field_name": "age"
+    },
+    {
+      "title": "Depuis combien d'années travaillez vous dans un service prenant en charge des urgences traumatologiques (hospitalier ou pré-hospitalier) ?",
+      "type": "select",
+      "values": {
+        "<_1": "moins d'un an",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12",
+        "13": "13",
+        "14": "14",
+        "15": "15",
+        "16": "16",
+        "17": "17",
+        "18": "18",
+        "19": "19",
+        "20": "20",
+        "21": "21",
+        "22": "22",
+        "23": "23",
+        "24": "24",
+        "25": "25",
+        "26": "26",
+        "27": "27",
+        "28": "28",
+        "29": "29",
+        "30": "30",
+        "31": "31",
+        "32": "32",
+        "33": "33",
+        "34": "34",
+        "35": "35",
+        "36": "36",
+        "37": "37",
+        "38": "38",
+        "39": "39",
+        "40": "40",
+        "40_or_more": "40 ou plus"
+      },
+      "field_name": "experience"
+    },
+    {
+      "title": "Dans quelle ville exercez-vous (ou code postal) ?",
+      "info": "Entrez les au moins les 2 premières lettres de votre ville ou code postal puis choisissez dans la liste qui s'affiche.",
+      "type": "text",
+      "field_name": "ville",
+      "id": "cities",
+      "class": "typeahead"
+    },
+    {
+      "title": "Dans quelle type de structure exercez-vous ?",
+      "type": "multiple_choice",
+      "values": {
+        "CHU": "Dans un centre hospitalier universitaire (CHU)",
+        "CHP": "Dans un centre hospitalier périphérique (CHP)",
+        "ambul": "En ambulatoire",
+        "prive": "En clinique"
+      },
+      "field_name": "type_structure"
+    },
+    {
+      "title": "Dans votre centre, existe-t-il un service prenant exclusivement en charge les urgences traumatologiques ?",
+      "type": "single_choice",
+      "values": {
+        "oui": "Oui",
+        "non": "Non"
+      },
+      "field_name": "filiere_traumato"
+    },
+    {
+      "title": "Dans votre service, quel est le temps moyen de passage aux urgences ?",
+      "type": "single_choice",
+      "values": {
+        "<_1": "Moins d'une heure",
+        "1_2": "Entre 1 et 2 heures",
+        "2_3": "Entre 2 et 3 heures",
+        ">_3": "Plus de 3 heures",
+        "ne_sais_pas": "Je ne sais pas"
+      },
+      "field_name": "tps_passage"
+    },
+    {
+      "title": "Merci pour vos réponses...",
+      "type": "heading"
+    },
+    {
+      "title": "Avez-vous des commentaires?",
+      "type": "textarea",
+      "field_name": "commentaires"
+    }
+  ],
+  "config": {
+    "title": "Questionnaire ALR",
+    "description": "Questionnaire Thèse ALR Hélène Charles",
+    "global_questions_param": {
+      "title": {
+        "class": "question-title mbl"
+      },
+      "fields": {
+        "class": "question-field"
+      },
+      "info": {
+        "class": "question-info"
+      }
+    },
+    "surround_questions_with": {
+      "tag": "div",
+      "options": {
+        "class": "form-group question well"
+      }
+    }
+  }
+}

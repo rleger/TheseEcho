@@ -1,0 +1,259 @@
+{
+  "questions": [
+    {
+      "title": "Informations générales",
+      "type": "heading"
+    },
+    {
+      "title": "Sexe",
+      "type": "single_choice",
+      "values": {
+        "homme": "Homme",
+        "femme": "Femme"
+      },
+      "field_name": "sexe"
+    },
+    {
+      "title": "Pays d'exercice",
+      "type": "single_choice",
+      "values": {
+        "france": "France",
+        "suisse": "Suisse"
+      },
+      "field_name": "pays_exercice"
+    },
+    {
+      "title": "Quel est votre âge ?",
+      "type": "select",
+      "values": {
+        "25": "25",
+        "26": "26",
+        "27": "27",
+        "28": "28",
+        "29": "29",
+        "30": "30",
+        "31": "31",
+        "32": "32",
+        "33": "33",
+        "34": "34",
+        "35": "35",
+        "36": "36",
+        "37": "37",
+        "38": "38",
+        "39": "39",
+        "40": "40",
+        "41": "41",
+        "42": "42",
+        "43": "43",
+        "44": "44",
+        "45": "45",
+        "46": "46",
+        "47": "47",
+        "48": "48",
+        "49": "49",
+        "50": "50",
+        "51": "51",
+        "52": "52",
+        "53": "53",
+        "54": "54",
+        "55": "55",
+        "56": "56",
+        "57": "57",
+        "58": "58",
+        "59": "59",
+        "60": "60",
+        "61": "61",
+        "62": "62",
+        "63": "63",
+        "64": "64",
+        "65": "65",
+        "66": "66",
+        "67": "67",
+        "68": "68",
+        "69": "69",
+        "70_or_more": "70 ou plus"
+      },
+      "field_name": "age"
+    },
+    {
+      "title": "Mode d'exercice",
+      "type": "single_choice",
+      "values": {
+        "seul": "Seul",
+        "a_deux": "A deux",
+        "groupe": "Cabinet de groupe"
+      },
+      "field_name": "mode_exercice"
+    },
+    {
+      "title": "Distance avec l'hôpital ou le centre d'imagerie le plus proche",
+      "type": "single_choice",
+      "values": {
+        "moins_10_km": "< 10 Km",
+        "plus_10_km": "≥ 10 Km"
+      },
+      "field_name": "distance_hopital"
+    },
+    {
+      "title": "Intérêts de l'échographie en médecine générale",
+      "type": "heading"
+    },
+    {
+      "title": "Avez-vous un intérêt pour la pratique de l'échographie en médecine générale ?",
+      "type": "single_choice",
+      "values": {
+        "oui": "Oui",
+        "non": "Non"
+      },
+      "subquestion": {
+        "oui": {
+          "true": [
+            {
+              "title": "Parce que :",
+              "type": "multiple_choice",
+              "field_name": "interet_echo_oui",
+              "values": {
+                "diag_rapide": "Diagnostic rapide",
+                "autonomie": "Meilleure autonomie",
+                "compl_examen_clinique": "Prolongement de l'examen clinique",
+                "satisfaction_perso": "Satisfaction personnelle",
+                "lucratif": "Lucratif",
+                "nombreuses_indic": "Nombreuses indications",
+                "baisse_coûts_sante": "Baisse des coûts de santé",
+                "compét_complem": "Compétence complémentaire",
+                "orientation_patient": "Meilleure orientation du patient après l’examen",
+                "autres": "Autres"
+
+              }
+            }
+          ]
+        },
+        "non": {
+          "true": [
+            {
+              "title": "Parce que :",
+              "type": "multiple_choice",
+              "field_name": "interet_echo_non",
+              "values": {
+                "formation_meconnue_complexe": "La formation est méconnue ou complexe",
+                "cout_appareil": "Coût de l'appareil",
+                "temps": "Manque de temps",
+                "inutile": "Inutile en médecine générale",
+                "accès_rapide_spec": "Accès rapide vers un spécialiste",
+                "manque_compet": "Crainte du manque de compétence",
+                "abandon_reflex_clin": "Abandon du réflexe clinique",
+                "hausse_coûts-sante": "Hausse des coûts de santé",
+                "désintérêt": "Désintérêt personnel",
+                "autres": "Autres"
+
+              }
+            }
+          ]
+        }
+      },
+      "field_name": "interet_echo"
+    },
+    {
+      "title": "Indications pour les médecins généralistes",
+      "type": "heading"
+    },
+    {
+      "title": "Quelles seraient pour vous les indications les plus utiles en médecine générale : ",
+      "type": "multiple_choice",
+      "field_name": "indications",
+      "values": {
+        "colique_nephretique": "Diagnostic d’une colique néphrétique",
+        "cholecystite": "Diagnostic d’une cholécystite aiguë",
+        "tvp_mi": "Diagnostic d’une thrombose veineuse profonde du membre inférieur",
+        "anevrisme_aorte": "Diagnostic d’un anévrisme de l’aorte abdominale",
+        "ep_pleural": "Diagnostic d’un épanchement pleural",
+        "masse_corpsetranger": "Diagnostic d’une masse ou d’un corps étranger sous cutané",
+        "grossesse": "Diagnostic d’une grossesse intra ou extra utérine",
+        "endomètre": "Diagnostic d’une anomalie de l’endomètre chez la femme ménopausée",
+        "ep_abdo": "Diagnostic d’un épanchement intra abdominal",
+        "app": "Diagnostic d’une appendicite aiguë",
+        "thyr": "Diagnostic d’un nodule thyroïdien",
+        "diverticulite": "Diagnostic d’une diverticulite aiguë",
+        "ictère": "Bilan d’un ictère",
+        "rhume_hanche": "Diagnostic d’un rhume de hanche chez l’enfant",
+        "ep_intraartic": "Diagnostic d’un épanchement intra articulaire",
+        "ep_peric": "Diagnostic d’un épanchement péricardique",
+        "fracture": "Diagnostic d’une fracture osseuse",
+        "globe": "Diagnostic d’un globe vésical",
+        "prostate": "Evaluation de la morphologie d’une prostate",
+        "torsion_testic": "Diagnostic d’une torsion testiculaire",
+        "sinusite": "Diagnostic d’une sinusite maxillaire",
+        "hernie": "Diagnostic d’une hernie abdominale"
+      }
+    },
+    {
+      "title": "Opinion générale sur l’échographie",
+      "type": "heading"
+    },
+    {
+      "title": "Idée du temps de formation minimale :",
+      "type": "single_choice",
+      "field_name": "temps_formation",
+      "values": {
+        "jours": "Jours",
+        "mois": "Mois",
+        "annees": "Années"
+      }
+    },
+    {
+      "title": "Degré de difficulté de la formation :",
+      "type": "single_choice",
+      "field_name": "difficulte",
+      "values": {
+        "faible": "Faible",
+        "moyen": "Moyen",
+        "difficile": "Difficile",
+        "impossible": "Impossible"
+      }
+    },
+    {
+      "title": "Degré d'utilisation en médecine générale :",
+      "type": "single_choice",
+      "field_name": "utilisation",
+      "values": {
+        "faible": "Faible",
+        "moyen": "Moyen",
+        "important": "Important"
+      }
+    },
+    {
+      "title": "En conclusion",
+      "type": "heading"
+    },
+    {
+      "title": "Seriez-vous intéressé pour faire de l'échographie dans votre cabinet :",
+      "type": "single_choice",
+      "field_name": "conclusion",
+      "values": {
+        "oui": "Oui",
+        "non": "Non"
+      }
+    }
+  ],
+  "config": {
+    "title": "Questionnaire Echographie en médecine générale",
+    "description": "Questionnaire échographie en médecine générale - Adnan Plakalo",
+    "global_questions_param": {
+      "title": {
+        "class": "question-title mbl"
+      },
+      "fields": {
+        "class": "question-field"
+      },
+      "info": {
+        "class": "question-info"
+      }
+    },
+    "surround_questions_with": {
+      "tag": "div",
+      "options": {
+        "class": "form-group question well"
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+// @import "../Flat-UI-Pro-1.3.2/less/flat-ui-pro.less";
+@import "variables";
+@import "typeahead";
+@import "background";
+@import "survey";
+@import "questions";
+@import "results";
+
+// Questions-well-colors
+@question-well-background-color:    HSLA(210, 29%, 95%, 1);
+@question-well-border-color:        @question-well-background-color;
+@question-well-border-color-hover:  @question-well-background-color;
+@question-well-error-border-color:  #CA0814;
+@survey-header-background-color:    RGBA(54, 73, 92, .5);
+
+body {
+    counter-reset: section;
+    font-family: @font-family-base;
+    color: @text-color;
+    font-size: @font-size-base;
+}
+
+.well {
+    box-shadow: none;
+}
+
+.footer {
+    text-align: center;
+    color: @gray-light;
+    margin-bottom: 40px;
+    font-size: ceil((@font-size-h6/1.8));
+    font-weight: 300;
+
+    p {
+        font-size: inherit;
+    }
+
+    .footer-header {
+        font-weight: 500;
+    }
+
+    a {
+        color: @gray-light;
+        text-decoration: underline;
+
+        &:hover {
+            color: @link-hover-color;
+        }
+    }
+}
