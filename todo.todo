@@ -7,6 +7,10 @@ Site
  ✔ Import names to DB @done (15-07-07 15:00)
  ✔ Generate tokens @done (15-07-07 15:00)
  ✔ Import from DB to mailchimp @done (15-07-07 15:15)
+ ☐ Change footer
+ ☐ Small tweaks (name changes and stuff)
+ ☐ Test old IE
 
  Email
- ☐
+ ☐ Template
+ ☐ Tests
