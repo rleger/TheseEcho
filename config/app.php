@@ -119,7 +119,7 @@ return [
         'These\Providers\BackendServiceProvider',
         'These\Providers\PusherServiceProvider',
         'These\Providers\PapertrailServiceProvider',
-        'Barryvdh\Debugbar\ServiceProvider',
+        // 'Barryvdh\Debugbar\ServiceProvider',
 
     /*
      * Laravel Framework Service Providers...

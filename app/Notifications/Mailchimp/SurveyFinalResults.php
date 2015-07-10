@@ -13,7 +13,7 @@ class SurveyFinalResults implements SurveyFinalResultsInterface
     /**
      * List ID of the ALR results subscribers.
      */
-    const ALR_RESULTS_SUBSCRIBERS_ID = 'f01d94ec65';
+    const Echo_results_SUBSCRIBERS_ID = 'f01d94ec65';
 
     /**
      * @var Mailchimp
@@ -41,7 +41,7 @@ class SurveyFinalResults implements SurveyFinalResultsInterface
     public function notify($title, $body)
     {
         $options = [
-            'list_id'    => Self::ALR_RESULTS_SUBSCRIBERS_ID,
+            'list_id'    => Self::Echo_results_SUBSCRIBERS_ID,
             'subject'    => 'Résultats ALR',
             'from_name'  => 'Hélène Charles',
             'from_email' => 'these.alr.doubs@gmail.com',
