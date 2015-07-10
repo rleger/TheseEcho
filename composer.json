@@ -12,7 +12,8 @@
 		"guzzlehttp/guzzle": "4.*",
 		"mailchimp/mailchimp": "2.0.*",
 		"pda/pheanstalk": "3.0.*@dev",
-		"pusher/pusher-php-server": "dev-master"
+		"pusher/pusher-php-server": "dev-master",
+		"fzaninotto/faker": "^1.6@dev"
 	},
 	"require-dev": {
 
