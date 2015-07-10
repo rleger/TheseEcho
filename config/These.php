@@ -14,8 +14,8 @@ return [
     ],
     'admin' => [
         'email' => [
-            'from' => '',
-            'name' => '',
+            'from' => 'these.echo@gmail.com',
+            'name' => 'Adnan Plakalo',
         ],
         'log' => [
             'filename' => 'These.log',
