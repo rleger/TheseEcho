@@ -10,7 +10,7 @@
 
         <p>Vous <strong>receverez</strong> les résultats de l'étude par e-mail.</p>
 
-        {!! Form::open(['url' => route('unsubscribe.answerer', ['what' => 'ALR_results'])]) !!}
+        {!! Form::open(['url' => route('unsubscribe.answerer', ['what' => 'Echo_results'])]) !!}
         <div class="form-group">
             <input name="answer_id" type="hidden" value="{{{ $answer_id }}}">
         </div>

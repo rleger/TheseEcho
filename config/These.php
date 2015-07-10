@@ -24,7 +24,8 @@ return [
 
     'mailchimp' => [
         'lists' => [
-            'TheseEcho'      => '69d1c7bcd4',
+            'TheseEcho'    => '69d1c7bcd4',
+            'Echo_results' => 'd90e75d0e6',
         ],
     ],
 ];

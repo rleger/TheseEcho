@@ -11,7 +11,7 @@
 
         <hr/>
 
-        {!! Form::open(['url' => route('subscribe.answerer', ['what' => 'ALR_results'])]) !!}
+        {!! Form::open(['url' => route('subscribe.answerer', ['what' => 'Echo_results'])]) !!}
         <!-- Show errors -->
         @include('partials.form_errors_header')
 

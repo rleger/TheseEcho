@@ -136,7 +136,7 @@ class SubscriptionController extends Controller
     public function subscribeToResults($answer_id)
     {
         // Subscribe answerer to email
-        // $this->subscriptionService->subscribeAnswerer($answer_id, ['ALR_results']);
+        // $this->subscriptionService->subscribeAnswerer($answer_id, ['Echo_results']);
 
         // return view('survey.subscribed', compact('answer_id'));
 
@@ -166,7 +166,7 @@ class SubscriptionController extends Controller
 
                 // Subscribe to mailing list
                 try {
-                    $this->newsletter->subscribeTo('ALR_results', $email);
+                    $this->newsletter->subscribeTo('Echo_results', $email);
                 } catch (\Mailchimp_List_AlreadySubscribed $e)
                 {
                     return view('survey.subscribed', compact('email'));
@@ -195,7 +195,7 @@ class SubscriptionController extends Controller
 
         // Unsubscribe from mailing list
         try {
-            $this->newsletter->unSubscribeFrom('ALR_results', $email);
+            $this->newsletter->unSubscribeFrom('Echo_results', $email);
         } catch (Mailchimp_List_NotSubscribed $e) {
             return view('survey.unsubscribed', compact('email'));
         }
