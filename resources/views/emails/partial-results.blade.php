@@ -3,7 +3,7 @@
 <h3 class="panel-title">Quelques chiffres</h3>
 </div>
 <div class="table-responsive">
-  <table class="table table-striped">
+  <table class="table table-striped first-col-left">
     <thead>
       <tr>
         <th></th>
@@ -27,13 +27,10 @@
       <td>-</td>
     </tr>
     <tr>
-      <td>Pratique l'ALR</td>
-      <td>{{ $results->howMany('pratique_ALR', 'oui') }}</td>
-      <td>{{ formatNumberTwoDigits($results->howMany('pratique_ALR', 'oui', 'percentage')) }}%</td>
-    </tr>
-    <tr>
-      <td>Pratique de l'ALR dans les FESF</td>
-      <td>{{ $results->howMany('pratique_ALR_FESF', 'jamais', 'absolute', '<>') }}</td>
-      <td>{{ formatNumberTwoDigits($results->howMany('pratique_ALR_FESF', 'jamais', 'percentage', '<>')) }}%</td>
+      <td>Pratique de l'échographie</td>
+      <td>{{ $results->howMany('interet_echo', 'oui') }}</td>
+      <td>{{ formatNumberTwoDigits($results->howMany('interet_echo', 'oui', 'percentage')) }}%</td>
     </tr>
   </table>
+</div>
+
