@@ -6,10 +6,12 @@
     <div class="well text-center mal">
         {!! HTML::image('images/icons/rocket.png', null, ["width" => 100, "height" => 100]) !!}
 
-        <h4 class="mtl">Titre</h4>
+        <h4 class="mtl">Echographie en médecine générale</h4>
 
         <p>
-        Description
+        Utilisation et intérêts en cabinet de médecine générale
+        <br>
+        Enquête comparative France / Suisse
         </p>
 
     </div>
