@@ -42,9 +42,9 @@ class SurveyFinalResults implements SurveyFinalResultsInterface
     {
         $options = [
             'list_id'    => Self::Echo_results_SUBSCRIBERS_ID,
-            'subject'    => 'Résultats ALR',
-            'from_name'  => 'Hélène Charles',
-            'from_email' => 'these.alr.doubs@gmail.com',
+            'subject'    => 'Résultats Questionnaire',
+            'from_name'  => 'Administrateur',
+            'from_email' => 'these.echo@gmail.com',
             'to_name'    => 'Etude',
         ];
 
